@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Dec 5, 2016 9:49:39 AM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="com.javaweb.model.Khachhang" table="khachhang" catalog="thucpham" optimistic-lock="version">
+        <id name="makhachhang" type="java.lang.Integer">
+            <column name="Makhachhang" />
+            <generator class="identity" />
+        </id>
+        <property name="username" type="string">
+            <column name="Username" length="50" not-null="true" unique="true" />
+        </property>
+        <property name="password" type="string">
+            <column name="Password" length="50" not-null="true" />
+        </property>
+        <property name="fullname" type="string">
+            <column name="Fullname" length="50" not-null="true" />
+        </property>
+        <property name="ngaysinh" type="date">
+            <column name="Ngaysinh" length="10" not-null="true" />
+        </property>
+        <property name="diachi" type="string">
+            <column name="Diachi" length="50" not-null="true" />
+        </property>
+        <property name="sdt" type="string">
+            <column name="Sdt" length="50" not-null="true" />
+        </property>
+        <property name="maquyen" type="int">
+            <column name="Maquyen" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Dec 5, 2016 9:49:39 AM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="com.javaweb.model.Quanlytrang" table="quanlytrang" catalog="thucpham" optimistic-lock="version">
+        <id name="matrang" type="java.lang.Integer">
+            <column name="Matrang" />
+            <generator class="identity" />
+        </id>
+        <property name="tentrang" type="string">
+            <column name="Tentrang" length="50" not-null="true" unique="true" />
+        </property>
+        <property name="link" type="string">
+            <column name="Link" length="100" not-null="true" />
+        </property>
+        <property name="mota" type="string">
+            <column name="Mota" length="50" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

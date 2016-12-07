@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Dec 5, 2016 9:49:39 AM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="com.javaweb.model.Thongke" table="thongke" catalog="thucpham" optimistic-lock="version">
+        <id name="mathongke" type="java.lang.Integer">
+            <column name="Mathongke" />
+            <generator class="identity" />
+        </id>
+        <property name="tenthongke" type="string">
+            <column name="Tenthongke" length="50" not-null="true" unique="true" />
+        </property>
+        <property name="thoigianthongke" type="timestamp">
+            <column name="Thoigianthongke" length="19" not-null="true" />
+        </property>
+        <property name="ngaybatdau" type="date">
+            <column name="Ngaybatdau" length="10" not-null="true" />
+        </property>
+        <property name="ngayketthuc" type="date">
+            <column name="Ngayketthuc" length="10" not-null="true" />
+        </property>
+        <property name="soluongsanpham" type="int">
+            <column name="Soluongsanpham" not-null="true" />
+        </property>
+        <property name="tongtien" type="double">
+            <column name="Tongtien" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="ghichu" type="string">
+            <column name="Ghichu" length="150" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

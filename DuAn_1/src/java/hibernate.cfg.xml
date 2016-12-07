@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+  <session-factory>
+    <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+    <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+    <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/thucpham</property>
+    <property name="hibernate.connection.username">root</property>
+    <property name="hibernate.connection.password">123456</property>
+    <mapping resource="com/javaweb/model/Ctgiohang.hbm.xml"/>
+    <mapping resource="com/javaweb/model/Hoadon.hbm.xml"/>
+    <mapping resource="com/javaweb/model/Phanhoi.hbm.xml"/>
+    <mapping resource="com/javaweb/model/Khachhang.hbm.xml"/>
+    <mapping resource="com/javaweb/model/Baidang.hbm.xml"/>
+    <mapping resource="com/javaweb/model/Loaisanpham.hbm.xml"/>
+    <mapping resource="com/javaweb/model/Quanlytrang.hbm.xml"/>
+    <mapping resource="com/javaweb/model/Hinhanh.hbm.xml"/>
+    <mapping resource="com/javaweb/model/Quyen.hbm.xml"/>
+    <mapping resource="com/javaweb/model/Lienhe.hbm.xml"/>
+    <mapping resource="com/javaweb/model/Nhacc.hbm.xml"/>
+    <mapping resource="com/javaweb/model/Gioithieu.hbm.xml"/>
+    <mapping resource="com/javaweb/model/Sanpham.hbm.xml"/>
+    <mapping resource="com/javaweb/model/Giohang.hbm.xml"/>
+    <mapping resource="com/javaweb/model/Thongke.hbm.xml"/>
+  </session-factory>
+</hibernate-configuration>

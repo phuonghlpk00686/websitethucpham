@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-reverse-engineering PUBLIC "-//Hibernate/Hibernate Reverse Engineering DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-reverse-engineering-3.0.dtd">
+<hibernate-reverse-engineering>
+  <schema-selection match-catalog="thucpham"/>
+  <table-filter match-name="ctgiohang"/>
+  <table-filter match-name="khachhang"/>
+  <table-filter match-name="quanlytrang"/>
+  <table-filter match-name="hinhanh"/>
+  <table-filter match-name="phanhoi"/>
+  <table-filter match-name="loaisanpham"/>
+  <table-filter match-name="quyen"/>
+  <table-filter match-name="giohang"/>
+  <table-filter match-name="nhacc"/>
+  <table-filter match-name="lienhe"/>
+  <table-filter match-name="hoadon"/>
+  <table-filter match-name="gioithieu"/>
+  <table-filter match-name="thongke"/>
+  <table-filter match-name="baidang"/>
+  <table-filter match-name="sanpham"/>
+</hibernate-reverse-engineering>

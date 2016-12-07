@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Dec 5, 2016 9:49:39 AM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="com.javaweb.model.Sanpham" table="sanpham" catalog="thucpham" optimistic-lock="version">
+        <id name="masanpham" type="java.lang.Integer">
+            <column name="Masanpham" />
+            <generator class="identity" />
+        </id>
+        <property name="tensanpham" type="string">
+            <column name="Tensanpham" length="50" not-null="true" unique="true" />
+        </property>
+        <property name="soluong" type="int">
+            <column name="Soluong" not-null="true" />
+        </property>
+        <property name="gianhap" type="double">
+            <column name="Gianhap" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="giaban" type="double">
+            <column name="Giaban" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="mota" type="string">
+            <column name="Mota" length="150" not-null="true" />
+        </property>
+        <property name="maloai" type="int">
+            <column name="Maloai" not-null="true" />
+        </property>
+        <property name="manhacc" type="int">
+            <column name="Manhacc" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

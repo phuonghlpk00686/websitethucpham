@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Dec 5, 2016 9:49:39 AM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="com.javaweb.model.Hoadon" table="hoadon" catalog="thucpham" optimistic-lock="version">
+        <id name="mahoadon" type="java.lang.Integer">
+            <column name="Mahoadon" />
+            <generator class="identity" />
+        </id>
+        <property name="tenhoadon" type="string">
+            <column name="Tenhoadon" length="50" not-null="true" unique="true" />
+        </property>
+        <property name="thoigianlap" type="timestamp">
+            <column name="Thoigianlap" length="19" not-null="true" />
+        </property>
+        <property name="thanhtien" type="double">
+            <column name="Thanhtien" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="magiohang" type="int">
+            <column name="Magiohang" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>
